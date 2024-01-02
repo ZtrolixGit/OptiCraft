@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiCraft</title>
+    <link rel="stylesheet" href="https://db.onlinewebfonts.com/c/b0755951227a35be2e1b6af8a8bbe233?family=Borsok">
+    <link rel="icon" href="https://github.com/ZtrolixGit/OptiCraft/blob/main/opticraft.png?raw=true" type="image/x-icon">
+    <style>
+        header {
+            padding: 20px;
+            text-align: right;
+        }
+
+        .header2 {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .button {
+          background-color: transparent; 
+          border-radius: 12px;
+          border: 2px solid #1bd96a;
+          color: white; 
+          padding: 16px 40px;
+          transition-duration: 0.4s;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          transition-duration: 0.4s;
+          font-family: 'Borsok';
+        }
+
+        .button:hover {
+          background-color: #1bd96a;
+          color: black;
+          box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+          transform: scale(1.1);
+        }
+
+        .button2:hover {
+          color: black;
+          transform: scale(1.1);
+        }
+
+        .button2 {
+          background-color: transparent; 
+          border: none;
+          color: white; 
+          padding: 16px 40px;
+          text-align: center;
+          transition-duration: 0.4s;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          transition-duration: 0.4s;
+          font-family: 'Borsok';
+        }
+
+        main {
+            padding: 20px;
+            flex: 1;
+        }
+
+        body {
+            font-family: 'Borsok';
+            background: linear-gradient(to bottom, #29292e, #121214);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh; /* Ensure the background covers the entire viewport height */
+            transition-duration: 0.4s; /* Add transition for smooth effect */
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 100px;
+            text-align: center;
+            transition-duration: 0.4s;
+        }
+
+        .title2 {
+            font-size: 30px;
+            text-align: center;
+            transition-duration: 0.4s;
+        }
+
+        .title:hover {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add shadow on hover */
+            transform: scale(1.1); /* Increase the size on hover */
+            transition-duration: 0.4s; /* Add transition for smooth effect */
+        }
+
+        .title2:hover {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add shadow on hover */
+            transform: scale(1.05); /* Increase the size on hover */
+            transition-duration: 0.4s; /* Add transition for smooth effect */
+        }
+
+        .footer {
+            font-size: 20px;
+            text-align: center;
+            transition-duration: 0.4s;
+        }
+
+        .footer:hover {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add shadow on hover */
+            transform: scale(1.1); /* Increase the size on hover */
+            transition-duration: 0.4s; /* Add transition for smooth effect */
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            border-radius: 10px;
+            text-align: center;
+            border: none;
+            background-color: #3498db; /* Set the background color as per your design */
+            color: #fff; /* Set the text color as per your design */
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+            line-height: 100px; /* Vertical centering of text */
+            font-size: 100px; /* Set the font size as per your design */
+        }
+
+        .box:hover {
+            transform: scale(1.1); /* Increase the size on hover */
+        }
+
+        .hovering {
+            background-color: #1bd96a;
+            transform: scale(1.1);
+            color: black;
+        }
+
+        .notHovering {
+            background-color: transparent; 
+            transform: scale(1);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="button header2 hovering" onclick="redirect('')">Home</button>
+        <button class="button header2" onclick="redirect('https://github.com/ZtrolixGit/OptiCraft')">Source</button>
+        <button class="button header2" onclick="redirect('downloads')">Download</button>
+    </header>
+    
+    <main>
+        <h1 class="title">O p t i C r a f t</h1>
+        <center>
+            <div class="box" style="background-color: transparent;" id="secure-box">
+                <button class="button" style="font-size: 100;">Optimization</button> 
+            </div>
+
+            <div class="box" style="background-color: transparent;" id="secure-box">
+                <button class="button" style="font-size: 100;">Lightweight</button> 
+            </div>
+
+            <div class="box" style="background-color: transparent;" id="secure-box">
+                <button class="button" style="font-size: 100;">Multiplayer</button> 
+            </div>
+        </center>
+    </main>
+
+    <footer>
+        <p class="footer">OptiCraft 2024©</p>
+    </footer>
+
+    <script>
+        function redirect(web) {
+            window.location.href = web;
+        }
+    </script>
+</body>
+</html>
