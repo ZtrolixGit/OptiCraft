@@ -1,0 +1,8 @@
+hideType = "RELOADING"
+rgbProgress = false
+showIn = "ALL"
+type = "PROGRESS"
+reloadText = "Edit in config!"
+resetResources = false
+reInitScreen = true
+animationSpeed = 500.0
