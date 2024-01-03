@@ -158,8 +158,9 @@
 <body>
     <header>
         <button class="button header2 hovering" onclick="redirect('')">Home</button>
-        <button class="button header2" onclick="redirect('https://github.com/ZtrolixGit/OptiCraft')">Source <i class="fa-solid fa-share-from-square"></i></button>
-        <button class="button header2" onclick="redirect('https://modrinth.com/modpack/optimizationcraft/versions')">Download <i class="fa-solid fa-share-from-square"></i></button>
+        <button class="button header2" onclick="redirect('https://github.com/ZtrolixGit/OptiCraft')">Source</button>
+        <button class="button header2" onclick="redirect('https://modrinth.com/modpack/optimizationcraft/versions')">Download</button>
+        <button id="signInButton" class="button header2" onclick="signIn()">Sign In</button>
     </header>
     
     <main>
@@ -174,7 +175,7 @@
             </div>
 
             <div class="box" style="background-color: transparent;" id="secure-box">
-                <button class="button" style="font-size: 100;"><i class="fa-solid fa-gear"></i> Modpack</button> 
+                <button class="button" style="font-size: 100;"><i class="fa-solid fa-compass"></i> Adventure</button> 
             </div>
         </center>
     </main>
@@ -182,6 +183,32 @@
     <footer>
         <p class="footer">OptiCraft 2024 <i class="fa-regular fa-copyright"></i></p>
     </footer>
+
+    <script>
+        // Function to check if the URL contains "?code="
+        function detectSignedIn() {
+            var url = window.location.href;
+            var signInButton = document.getElementById("signInButton");
+
+            if (url.includes("?code=")) {
+                signInButton.textContent = "Signed In";
+                signInButton.classList.add("hovering");
+            }else{
+                signInButton.textContent = "Sign In";
+            }
+        }
+
+        function signIn() {
+            var url = window.location.href;
+
+            if (!url.includes("?code=")) {
+                window.location.href = "https://discord.com/api/oauth2/authorize?client_id=1192027020209688647&response_type=code&redirect_uri=https%3A%2F%2Fztrolixgit.github.io%2FOptiCraft%2F&scope=identify+email";
+            }
+        }
+
+        // Call the function on page load
+        detectSignedIn();
+    </script>
 
     <script>
         function redirect(web) {
