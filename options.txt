@@ -44,8 +44,8 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"true"
-resourcePacks:["vanilla","fabric","file/guiretextures-1.10.zip","file/GUI-SimpleStylized_4.0-1.21.zip","continuity:default","continuity:glass_pane_culling_fix","file/Fast Better Grass.zip","black_icons"]
-incompatibleResourcePacks:["file/guiretextures-1.10.zip","continuity:default","continuity:glass_pane_culling_fix"]
+resourcePacks:["vanilla","fabric","file/guiretextures-1.10.zip","file/GUI-SimpleStylized_4.0-1.21.zip","continuity:default","continuity:glass_pane_culling_fix","file/Fast Better Grass.zip","black_icons","file/Icons v.1.9.3§7.zip","file/Round-Trees-7.1-1.19+.zip","file/Better-Leaves-7.2-1.19+.zip","file/§d§lCherry Background§r§0.zip","file/axolotl_bucket_variants-v15.zip"]
+incompatibleResourcePacks:["file/guiretextures-1.10.zip","continuity:default","continuity:glass_pane_culling_fix","file/Round-Trees-7.1-1.19+.zip","file/Better-Leaves-7.2-1.19+.zip","file/§d§lCherry Background§r§0.zip"]
 lastServer:
 lang:en_us
 soundDevice:""
@@ -122,6 +122,7 @@ key_key.hotbar.7:key.keyboard.7
 key_key.hotbar.8:key.keyboard.8
 key_key.hotbar.9:key.keyboard.9
 key_key.fabrishot.screenshot:key.keyboard.f9
+key_key.wurst.zoom:key.keyboard.minus
 key_key.dynamic_fps.toggle_forced:key.keyboard.unknown
 key_key.dynamic_fps.toggle_disabled:key.keyboard.unknown
 key_key.entityculling.toggle:key.keyboard.unknown
@@ -168,7 +169,7 @@ key_key.whisper:key.keyboard.unknown
 key_key.mute_microphone:key.keyboard.m
 key_key.disable_voice_chat:key.keyboard.n
 key_key.hide_icons:key.keyboard.h
-key_key.voice_chat:key.keyboard.v
+key_key.voice_chat:key.keyboard.semicolon
 key_key.voice_chat_settings:key.keyboard.unknown
 key_key.voice_chat_group:key.keyboard.g
 key_key.voice_chat_toggle_recording:key.keyboard.unknown
